@@ -151,7 +151,7 @@
 
 								<article id="myArticle3">
 									<header>
-										<h2><a>Cell detection in live imaging</a></h2>
+										<h2><a>Stem Cell detection in live imaging</a></h2>
 									</header>
 									<a href="javascript:void(0)" class="image fit" style="width: 100%; height: auto; overflow: hidden; ">
 										<video style="width: 100%; height: auto; border: 2px solid #f0f0f0;" src="videos/cell_detector.mp4" alt="" controls></video> 
@@ -166,11 +166,12 @@
 											</strong>
 										</p>
 
-										<p> This project was an exploration into the capabilities of Large Language Models (LLMs) for text summarization. The primary objective was to develop an open-source tool capable of summarizing complex research papers across various domains, including satellite communication, renewable energies, and autonomous vehicles. </p>
+										<p> In my previous company we were working to optimise stem cell differentiation(changing of cell from one type to another). To do this it was required to detect and track various cell nuclies and predict the type of cell they are in live imaging. Now as stem cells are live things static images and standard object detection pipelines such as Detectron Yolo don't give ideal results for identification of their type. </p>
 
-										<h4>Approach and Methodology</h4>
+										<p>To solve this problem, I realized that it would require additional dimensional features such as temporal and spacial features of the cell and its neigbours. So i used a combination of detectron2 architecture with variouis transformer vision architectures such as detr, vit, etc. to incorporate these feature and improve the prediction. The resulting model outperformed all our existing models by a good margin and served the pupose. The above video shows the model performance on various types of stem cell clips</p>
+										<!-- <h4>Approach and Methodology</h4> -->
 
-										<p> The project was executed in several stages, each contributing to the development and refinement of the text summarization tool. </p>
+										<!-- <p> The project was executed in several stages, each contributing to the development and refinement of the text summarization tool. </p>
 
 										<ol>
 											<li> <strong>Selection of an Open-Source LLM:</strong> The first step involved selecting a suitable open-source LLM. The chosen model needed to have a proven track record in understanding and generating human-like text.</li>
@@ -184,7 +185,7 @@
 
 										<p> The resulting text summarization tool demonstrated a strong ability to generate high-quality summaries of complex research papers. By condensing lengthy and intricate papers into concise summaries, the tool provides users with a quick and efficient way to understand the key points of a paper without needing to read it in full. This has the potential to save researchers significant amounts of time and make scientific knowledge more accessible to non-experts. </p>
 
-										<p> The project serves as a testament to the power of Large Language Models in transforming the way we process and consume information. It highlights the potential of these models in making complex domains more accessible and understandable, thereby driving further innovation and discovery. </p>
+										<p> The project serves as a testament to the power of Large Language Models in transforming the way we process and consume information. It highlights the potential of these models in making complex domains more accessible and understandable, thereby driving further innovation and discovery. </p> -->
 									</div>
 									<ul class="actions special">
 										<li><button  class="myButton" data-target="extraContent3">Read More</button></li>
@@ -193,8 +194,7 @@
 								
 								<article id="myArticle4">
 									<header>
-										<h2><a >Paraphrase<br />
-										Identification</a></h2>
+										<h2><a >Twitter Content Moderation</a></h2>
 									</header>
 									<a  class="image fit"><img src="images/twitter-2_0.png" alt="" /></a>
 									
