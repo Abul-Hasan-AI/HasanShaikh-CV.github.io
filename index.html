@@ -200,14 +200,15 @@
 									
 									<div id="extraContent4" style="display: none;">
 										<p>
-											<strong>Project Overview: ParaPhrase Detection (SemEval 2015) in Twitter Using Modern NLP Techniques</strong>
+											<strong>Project Overview: Real time Content Moderation on twitter</strong>
 										</p>
-										<p>
-											This project represents my endeavor to tackle the SemEval-2015 Task 1, titled "Paraphrase Detection in Twitter". This task posed a significant challenge to computational linguistics researchers, requiring them to identify paraphrases within Twitter data. Participants were presented with pairs of sentences extracted from Twitter trends and tasked with determining whether they conveyed the same or very similar meanings.
-										</p>
+										<p> This project was aimed at developing sophisticated and reliable machine learning models capable of detecting and filtering various types of offensive content, including toxicity, hate speech, attacks, racism, misogyny, white supremacy, Islamophobia, misinformation, conspiracy theories, Antivax, and vaccine hesitancy. The requirements for reliability were high accuracy reaching human levels and high speed for some of the real time filtrations.</p>
 										
 										<p>
-											The performance of the systems was evaluated using several metrics, including the F-1 score and Accuracy against human judgments. Additional evaluations were provided by Pearson correlation and PINC, a measure of lexical dissimilarity. The Twitter Paraphrase Corpus, developed via crowdsourcing and containing approximately 17,790 annotated sentence pairs, was used for this task. Baseline systems, including a logistic regression model using simple lexical features and the Weighted Matrix Factorization model, were provided for comparison. This task holds significance for various NLP applications, such as summarization, sentiment analysis, textual entailment, and information extraction.
+											The image models for such content filtering included Googlenet, Resnet which are both very efficient and give state of the art performance for image classification. The model was combined Bert and Distilbert to allow multimodal classification and thereby content filtering based on both text and image content of the tweet.
+										</p>
+										<p>
+											The performance of the systems was evaluated using several metrics, including the F-1 score and Accuracy against human judgments. For most of the cases the average AUC-ROC value went over 95% which was perfect for the task. 
 										</p>
 										<!-- <p>
 											For this task I used DistilBERT which is is a smaller, faster, cheaper transformer model trained by distillation of Bert base. It has 40% less parameters than bert-base-uncased, runs 60% faster while preserving over 95% of BERT’s performances as measured on the GLUE language understanding benchmark.
@@ -215,7 +216,7 @@
 										</p> -->
 										
 										
-										<h4>Approach and Results</h4>
+										<!-- <h4>Approach and Results</h4>
 										
 										<p>
 											For this task, I utilized DistilBERT, a smaller, faster, and more cost-effective transformer model trained by distilling BERT base. Despite having 40% fewer parameters than bert-base-uncased, DistilBERT runs 60% faster while preserving over 95% of BERT’s performances as measured on the GLUE language understanding benchmark.
@@ -223,7 +224,7 @@
 										
 										<p>
 											I fine-tuned this model to act as a binary classifier, determining whether two sentences are paraphrases of each other. With just a bit of training, fine-tuning, and hyperparameter optimization, the model performed exceptionally well, matching the performance of the top-performing model from the original paper.
-										</p>
+										</p> -->
 										
 									</div>
 									
